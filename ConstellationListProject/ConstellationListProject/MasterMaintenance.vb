@@ -216,7 +216,11 @@
 
         ElseIf Button1.Text = "登録" Then
 
-            insertProcess()
+            If lengthCheck() = False Then
+
+                insertProcess()
+
+            End If
 
         End If
 
@@ -267,4 +271,26 @@
         End Try
 
     End Sub
+
+    Function lengthCheck() As Boolean
+
+        Dim errorCheck As Boolean
+
+        If adderText.Text.Length > 15 Then
+
+            errorCheck = True
+            MsgBox("氏名は全角15文字以内で入力してください")
+
+        End If
+
+        If adderPass.Text.Length > 16 Then
+
+            errorCheck = True
+            MsgBox("パスワードは半角48文字以内で入力してください")
+
+        End If
+
+        Return errorCheck
+
+    End Function
 End Class
