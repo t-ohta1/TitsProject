@@ -4,6 +4,9 @@
     Dim textbox(5) As System.Windows.Forms.TextBox
     '0がユーザ、1が星座
     Dim maintenanceType As Integer
+    Dim adderText As System.Windows.Forms.TextBox
+    Dim adderRadio As System.Windows.Forms.RadioButton
+    Dim adderPass As System.Windows.Forms.TextBox
 
     Dim cn As System.Data.SqlClient.SqlConnection
 
@@ -17,15 +20,24 @@
 
     Private Sub MasterMaintenance_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
 
-        If endType = 1 Then
+        If endType = 0 Then
+
+        ElseIf endType = 1 Then
 
             MaintenanceMenu.Show()
 
             My.Application.ApplicationContext.MainForm = MaintenanceMenu
 
-        ElseIf endtype = 0 Then
+        ElseIf endType = 2 Then
+
+            DoneMaintenance.Show()
+
+            My.Application.ApplicationContext.MainForm = DoneMaintenance
 
         End If
+
+        closeConnection()
+
     End Sub
 
     Private Sub MasterMaintenance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -44,8 +56,6 @@
         End If
 
         setData()
-
-        closeConnection()
 
     End Sub
 
@@ -114,6 +124,8 @@
 
         End While
 
+        sr.Close()
+
     End Sub
 
     Sub closeConnection()
@@ -158,10 +170,15 @@
         password.TabIndex = 0
         password.PasswordChar = "*"
 
-
+        'formへの追加
         Controls.Add(radio)
         Controls.Add(textbox)
         Controls.Add(password)
+
+        '値取得のため
+        adderRadio = radio
+        adderText = textbox
+        adderPass = password
 
 
     End Sub
@@ -191,9 +208,63 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        createRadioAndTextBox()
+        If Button1.Text = "追加" Then
 
-        Button1.Text = "登録"
+            Button1.Text = "登録"
+
+            createRadioAndTextBox()
+
+        ElseIf Button1.Text = "登録" Then
+
+            insertProcess()
+
+        End If
+
+    End Sub
+
+    Sub insertProcess()
+
+        Try
+
+            Dim cmd As New SqlClient.SqlCommand
+            Dim sqlStr As String
+            Dim addId As String
+
+            cmd.Connection = cn
+            cmd.CommandType = CommandType.Text
+
+            If adderRadio.Text.Length = 1 Then
+
+                addId = "0" + adderRadio.Text
+
+            Else
+
+                addId = adderRadio.Text
+
+            End If
+
+            sqlStr = "INSERT INTO M_USER(USER_ID, USER_NAME, PASSWORD, DELETE_FLAG, CREATE_DATE, CREATE_USER)"
+            sqlStr += "VALUES("
+            sqlStr += "'" & addId & "',"
+            sqlStr += "'" & adderText.Text & "',"
+            sqlStr += "'" & adderPass.Text & "',"
+            sqlStr += " 0, GETDATE(), '00')"
+
+            cmd.CommandText = sqlStr
+
+            cmd.ExecuteNonQuery()
+
+            cmd.Dispose()
+
+            endType = 2
+
+            Me.Close()
+
+        Catch ex As SqlClient.SqlException
+
+            MsgBox(ex.Message())
+
+        End Try
 
     End Sub
 End Class
