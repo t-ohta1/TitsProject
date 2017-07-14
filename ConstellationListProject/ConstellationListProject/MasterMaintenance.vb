@@ -276,17 +276,17 @@
 
         Dim errorCheck As Boolean
 
-        If adderText.Text.Length > 15 Then
+        If adderText.Text.Length > 15 Or adderText.Text.Length = 0 Then
 
             errorCheck = True
-            MsgBox("氏名は全角15文字以内で入力してください")
+            MsgBox("氏名を全角15文字以内で入力してください")
 
         End If
 
-        If adderPass.Text.Length > 16 Then
+        If adderPass.Text.Length > 16 Or adderPass.Text.Length = 0 Then
 
             errorCheck = True
-            MsgBox("パスワードは半角48文字以内で入力してください")
+            MsgBox("パスワードを半角48文字以内で入力してください")
 
         End If
 
