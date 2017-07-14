@@ -1,7 +1,8 @@
 ﻿Public Class MasterMaintenance
 
     Dim endType As Integer
-    Dim textbox(5) As System.Windows.Forms.TextBox
+    Dim textbox(4) As System.Windows.Forms.TextBox
+    Dim radioButton(4) As System.Windows.Forms.RadioButton
     '0がユーザ、1が星座
     Dim maintenanceType As Integer
     Dim adderText As System.Windows.Forms.TextBox
@@ -43,6 +44,7 @@
     Private Sub MasterMaintenance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         createTextBoxList()
+        createRadioButtonList()
         connectDb()
 
         If Label2.Text = "ユーザー" Then
@@ -147,6 +149,15 @@
 
     End Sub
 
+    Sub createRadioButtonList()
+
+        radioButton(0) = RadioButton1
+        radioButton(1) = RadioButton2
+        radioButton(2) = RadioButton3
+        radioButton(3) = RadioButton4
+
+    End Sub
+
     Sub createRadioAndTextBox()
 
         Dim textbox As New System.Windows.Forms.TextBox
@@ -226,6 +237,53 @@
 
     End Sub
 
+    Sub updateProcess()
+
+        Try
+
+            Dim cmd As New SqlClient.SqlCommand
+            Dim sqlstr As String
+            Dim updateId As String
+
+            cmd.Connection = cn
+            cmd.CommandType = CommandType.Text
+
+            If adderRadio.Text.Length = 1 Then
+
+                updateId = "0" + adderRadio.Text
+
+            Else
+
+                updateId = adderRadio.Text
+
+            End If
+
+            If maintenanceType = 0 Then
+
+                sqlstr = "UPDATE M_USER"
+                sqlstr += " SET USER_NAME = '" & Trim(adderText.Text) & "',"
+                sqlstr += "UPDATE_DATE = GETDATE(), UPDATE_USER = '00'"
+                sqlstr += "WHERE USER_ID = '" & updateId & "'"
+
+            End If
+
+            cmd.CommandText = sqlstr
+
+            cmd.ExecuteNonQuery()
+
+            cmd.Dispose()
+
+            endType = 2
+
+            Me.Close()
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
     Sub insertProcess()
 
         Try
@@ -247,12 +305,22 @@
 
             End If
 
-            sqlStr = "INSERT INTO M_USER(USER_ID, USER_NAME, PASSWORD, DELETE_FLAG, CREATE_DATE, CREATE_USER)"
-            sqlStr += "VALUES("
-            sqlStr += "'" & addId & "',"
-            sqlStr += "'" & adderText.Text & "',"
-            sqlStr += "'" & adderPass.Text & "',"
-            sqlStr += " 0, GETDATE(), '00')"
+            If maintenanceType = 0 Then
+
+                sqlStr = "INSERT INTO M_USER(USER_ID, USER_NAME, PASSWORD, DELETE_FLAG, CREATE_DATE, CREATE_USER)"
+                sqlStr += "VALUES("
+                sqlStr += "'" & addId & "',"
+                sqlStr += "'" & adderText.Text & "',"
+                sqlStr += "'" & adderPass.Text & "',"
+                sqlStr += " 0, GETDATE(), '00')"
+
+            Else
+
+                MsgBox("未実装")
+
+                Throw New Exception
+
+            End If
 
             cmd.CommandText = sqlStr
 
@@ -264,7 +332,7 @@
 
             Me.Close()
 
-        Catch ex As SqlClient.SqlException
+        Catch ex As exception
 
             MsgBox(ex.Message())
 
@@ -293,4 +361,61 @@
         Return errorCheck
 
     End Function
+
+    Function nameLengthCheck() As Boolean
+
+        Dim errorCheck As Boolean
+
+        If adderText.Text.Length > 15 Or adderText.Text.Length = 0 Then
+
+            errorCheck = True
+            MsgBox("氏名を全角15文字以内で入力してください")
+
+        End If
+
+        Return errorCheck
+
+    End Function
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Try
+
+            Dim result As DialogResult = MessageBox.Show("更新を実行してもよろしいでしょうか",
+                                                           "確認",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Exclamation,
+                                                         MessageBoxDefaultButton.Button2)
+
+            If result = DialogResult.Yes Then
+
+                checkeWhereRadio()
+
+                If (Not nameLengthCheck()) Then
+
+                    updateProcess()
+
+                End If
+
+            End If
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub checkeWhereRadio()
+
+        For i = 0 To 3
+
+            If (radioButton(i).Checked()) Then
+
+                adderRadio = radioButton(i)
+                adderText = textbox(i)
+
+            End If
+        Next
+
+    End Sub
 End Class
