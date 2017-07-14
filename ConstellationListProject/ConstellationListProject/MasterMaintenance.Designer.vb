@@ -139,7 +139,7 @@ Partial Class MasterMaintenance
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(57, 27)
         Me.Button1.TabIndex = 10
-        Me.Button1.Text = "追加"
+        Me.Button1.Text = "登録"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2

@@ -13,6 +13,10 @@
 
         If endType = 0 Then
 
+            MainMenu.Show()
+
+            My.Application.ApplicationContext.MainForm = MainMenu
+
         ElseIf endType = 1 Then
 
             MasterMaintenance.Label2.Text = "ユーザー"

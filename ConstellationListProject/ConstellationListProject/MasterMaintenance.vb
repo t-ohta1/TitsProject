@@ -97,7 +97,7 @@
                                 SELECT ROW_NUMBER() OVER(ORDER BY CONSTELLATION_ID ASC) AS ROW,
                                     CONSTELLATION_NAME
                                 FROM M_CONSTELLATION)G_ROW
-                                WHERE G_ROW.ROW BETWEEN 1 AND 5"
+                                WHERE G_ROW.ROW BETWEEN 1 AND 4"
         End If
 
         sr = cmd.ExecuteReader()
