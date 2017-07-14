@@ -399,7 +399,6 @@
 
             End If
 
-
         Catch ex As Exception
 
         End Try
@@ -418,4 +417,63 @@
         Next
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        Try
+
+            Dim result As DialogResult = MessageBox.Show("削除を実行してもよろしいでしょうか",
+                                                           "確認",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Exclamation,
+                                                         MessageBoxDefaultButton.Button2)
+
+            If result = DialogResult.Yes Then
+
+                checkeWhereRadio()
+
+                deleteProcess()
+
+            End If
+
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Sub deleteProcess()
+
+        Dim cmd As New SqlClient.SqlCommand
+        Dim sqlStr As String
+        Dim deleteId As String
+
+        cmd.Connection = cn
+
+        cmd.CommandType = CommandType.Text
+
+        If adderRadio.Text.Length = 1 Then
+
+            deleteId = "0" + adderRadio.Text
+
+        Else
+
+            deleteId = adderRadio.Text
+
+        End If
+
+        sqlStr = "DELETE M_USER WHERE USER_ID = '" & deleteId & "'"
+
+        cmd.CommandText = sqlStr
+
+        cmd.ExecuteNonQuery()
+
+        cmd.Dispose()
+
+        endType = 2
+
+        Me.Close()
+
+    End Sub
+
 End Class
