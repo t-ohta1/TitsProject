@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MasterMaintenance
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MasterMaintenance
     'メモ: 以下のプロシージャは Windows フォーム デザイナーで必要です。
     'Windows フォーム デザイナーを使用して変更できます。  
     'コード エディターを使って変更しないでください。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,8 +38,6 @@ Partial Class MasterMaintenance
         Me.Button4 = New System.Windows.Forms.Button()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -139,7 +137,7 @@ Partial Class MasterMaintenance
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(57, 27)
         Me.Button1.TabIndex = 10
-        Me.Button1.Text = "登録"
+        Me.Button1.Text = "追加"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -187,31 +185,11 @@ Partial Class MasterMaintenance
         Me.TextBox4.Size = New System.Drawing.Size(143, 25)
         Me.TextBox4.TabIndex = 15
         '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(74, 244)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(33, 22)
-        Me.RadioButton5.TabIndex = 16
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "4"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(148, 241)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(143, 25)
-        Me.TextBox5.TabIndex = 17
-        '
         'MasterMaintenance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(419, 403)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.RadioButton5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.RadioButton4)
         Me.Controls.Add(Me.Button4)
@@ -253,6 +231,4 @@ Partial Class MasterMaintenance
     Friend WithEvents Button4 As Button
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents TextBox5 As TextBox
 End Class

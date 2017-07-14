@@ -3,7 +3,7 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        endType = 0
+        endType = 3
 
         Me.Close()
 
@@ -12,10 +12,6 @@
     Private Sub MaintenanceMenu_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
 
         If endType = 0 Then
-
-            MainMenu.Show()
-
-            My.Application.ApplicationContext.MainForm = MainMenu
 
         ElseIf endType = 1 Then
 
@@ -32,6 +28,12 @@
             MasterMaintenance.Show()
 
             My.Application.ApplicationContext.MainForm = MasterMaintenance
+
+        ElseIf endType = 3 Then
+
+            MainMenu.Show()
+
+            My.Application.ApplicationContext.MainForm = MainMenu
 
         End If
     End Sub

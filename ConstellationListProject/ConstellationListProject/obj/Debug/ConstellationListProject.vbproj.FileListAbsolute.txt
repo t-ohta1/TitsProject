@@ -10,3 +10,4 @@ C:\Users\t-ohta\Documents\GitHub\TitsProject\ConstellationListProject\Constellat
 C:\Users\t-ohta\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
 C:\Users\t-ohta\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
 C:\Users\t-ohta\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
+C:\Users\t-ohta\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache

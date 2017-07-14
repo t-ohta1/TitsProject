@@ -9,7 +9,7 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
-        endType = 0
+        endType = 1
 
         Me.Close()
 
@@ -17,18 +17,20 @@
 
     Private Sub MasterMaintenance_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
 
-        If endType = 0 Then
+        If endType = 1 Then
 
             MaintenanceMenu.Show()
 
             My.Application.ApplicationContext.MainForm = MaintenanceMenu
+
+        ElseIf endtype = 0 Then
 
         End If
     End Sub
 
     Private Sub MasterMaintenance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        createTextBox()
+        createTextBoxList()
         connectDb()
 
         If Label2.Text = "ユーザー" Then
@@ -124,13 +126,74 @@
         End If
     End Sub
 
-    Sub createTextBox()
+    Sub createTextBoxList()
 
         textbox(0) = TextBox1
         textbox(1) = TextBox2
         textbox(2) = TextBox3
         textbox(3) = TextBox4
-        textbox(4) = TextBox5
+
+    End Sub
+
+    Sub createRadioAndTextBox()
+
+        Dim textbox As New System.Windows.Forms.TextBox
+        Dim password As New System.Windows.Forms.TextBox
+        Dim radio As New System.Windows.Forms.RadioButton
+
+        radio.Text = getTextBoxCnt(Me)
+        radio.Name = "adderRadio"
+        radio.Location = New System.Drawing.Point(74, 245)
+        radio.Size = New System.Drawing.Size(33, 22)
+        radio.TabIndex = 0
+
+        textbox.Name = "adderTextBox"
+        textbox.Location = New System.Drawing.Point(148, 242)
+        textbox.Size = New System.Drawing.Size(143, 25)
+        textbox.TabIndex = 0
+
+        password.Name = "adderPassword"
+        password.Location = New System.Drawing.Point(148, 273)
+        password.Size = New System.Drawing.Size(143, 25)
+        password.TabIndex = 0
+        password.PasswordChar = "*"
+
+
+        Controls.Add(radio)
+        Controls.Add(textbox)
+        Controls.Add(password)
+
+
+    End Sub
+
+    Function getTextBoxCnt(ByVal ctrl As Control) As Integer
+
+        If ctrl.Controls.Count = 0 Then
+            If TypeOf ctrl Is TextBox Then
+
+                Return 1
+
+            Else
+
+                Return 0
+            End If
+        End If
+        Dim cnt As Integer
+
+        For Each con As Control In ctrl.Controls
+
+            cnt += getTextBoxCnt(con)
+
+        Next
+
+        Return cnt
+    End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        createRadioAndTextBox()
+
+        Button1.Text = "登録"
 
     End Sub
 End Class
