@@ -45,3 +45,16 @@ C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\Constellati
 C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MasterMaintenance.resources
 C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MaintenanceMenu.resources
 C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MainMenu.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MainMenu.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MaintenanceMenu.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MasterMaintenance.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb

@@ -140,6 +140,13 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\ConstellationListProject.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\ConstellationListProject.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\Login.datasource" />
+    <None Include="My Project\DataSources\MainMenu.datasource" />
+    <None Include="My Project\DataSources\MaintenanceMenu.datasource" />
+    <None Include="My Project\DataSources\MasterMaintenance.datasource" />
+    <None Include="My Project\DataSources\Search.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
