@@ -48,7 +48,7 @@ Partial Class MainMenu
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("メイリオ", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label1.Location = New System.Drawing.Point(81, 20)
+        Me.Label1.Location = New System.Drawing.Point(95, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(172, 55)
         Me.Label1.TabIndex = 0
@@ -72,14 +72,6 @@ Partial Class MainMenu
         Me.Button2.Text = "マスタメンテ"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'MainMenuBindingSource
-        '
-        Me.MainMenuBindingSource.DataSource = GetType(ConstellationListProject.MainMenu)
-        '
-        'MainMenuBindingSource1
-        '
-        Me.MainMenuBindingSource1.DataSource = GetType(ConstellationListProject.MainMenu)
-        '
         'DataSet1
         '
         Me.DataSet1.DataSetName = "NewDataSet"
@@ -91,10 +83,6 @@ Partial Class MainMenu
         'DataSet3
         '
         Me.DataSet3.DataSetName = "NewDataSet"
-        '
-        'MainMenuBindingSource2
-        '
-        Me.MainMenuBindingSource2.DataSource = GetType(ConstellationListProject.MainMenu)
         '
         'Button3
         '
@@ -116,9 +104,13 @@ Partial Class MainMenu
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(91, 93)
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox1.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TextBox1.Location = New System.Drawing.Point(91, 79)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(176, 137)
         Me.TextBox1.TabIndex = 8
         '

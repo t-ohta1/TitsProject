@@ -5,3 +5,11 @@ C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\Constella
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.PagingTest.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache

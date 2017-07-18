@@ -32,11 +32,11 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-<<<<<<< HEAD
+
             Me.MainForm = Global.ConstellationListProject.MainMenu
-=======
+
             Me.MainForm = Global.ConstellationListProject.PagingTest
->>>>>>> 9902455b31f5e7a0fb750f3443c9ba2d338b4aad
+
         End Sub
     End Class
 End Namespace

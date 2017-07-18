@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EF68BC77-9151-4B5E-B31B-EC6EC2A11ED6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ConstellationListProject.My.MyApplication</StartupObject>
+    <StartupObject>ConstellationListProject.MainMenu</StartupObject>
     <RootNamespace>ConstellationListProject</RootNamespace>
     <AssemblyName>ConstellationListProject</AssemblyName>
     <FileAlignment>512</FileAlignment>
