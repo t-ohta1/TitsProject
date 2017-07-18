@@ -1,60 +1,7 @@
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\bin\Debug\ConstellationListProject.exe
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\bin\Debug\ConstellationListProject.xml
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.exe
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.xml
-C:\Users\t-ohta\AppData\Local\Temporary Projects\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MainMenu.resources
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
-C:\Users\m-ito\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
-<<<<<<< HEAD
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
-C:\Users\m-arino\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
-=======
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
->>>>>>> 8830a7038376c74d198041d5adbc04b29f5742cb
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MasterMaintenance.resources
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MaintenanceMenu.resources
-C:\Users\t-ohta\Documents\GitHub\LastChance\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MainMenu.resources
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe.config
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.exe
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.pdb
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\bin\Debug\ConstellationListProject.xml
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbprojResolveAssemblyReference.cache
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.DoneMaintenance.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MainMenu.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MaintenanceMenu.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.MasterMaintenance.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.Resources.resources
+C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.PagingTest.resources
 C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.vbproj.GenerateResource.Cache
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.exe
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.xml
-C:\Users\m-arino\Documents\GitHub\TitsProject\ConstellationListProject\ConstellationListProject\obj\Debug\ConstellationListProject.pdb
